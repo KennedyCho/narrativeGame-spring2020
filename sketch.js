@@ -26,6 +26,24 @@ function startClick(){
 
   let buttonA = document.createElement("button"); // create button
   buttonA.innerHTML = "A"; // add text inside button
-  document.body.appendChild(buttonA); // add to html body
+  document.getElementById("decision-container").appendChild(buttonA); // add to html body
 
+  buttonA.className = "decision-button";
+  buttonA.id = "button-A";
+
+  buttonA.addEventListener("click", clickBtnA);
+
+  // buttonB
+  let buttonB = document.createElement("button"); // create button
+  buttonB.innerHTML = "B"; // add text inside button
+  document.getElementById("decision-container").appendChild(buttonB); // add to html body
+
+  buttonB.className = "decision-button";
+  buttonB.id = "button-B";
+
+}
+
+function clickBtnA() {
+  console.log("A");
+  
 }
