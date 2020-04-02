@@ -4,9 +4,17 @@ body {
 }
 
 #sketch-container{
-    /* float: right;  */
-
     margin: 5%;
-    
+}
 
+#decision-container{
+    /* center buttons inside div */
+    display: flex; 
+    justify-content: center;
+}
+
+.decision-button{
+    /* add spacing between buttons */
+    margin-left: 10%;
+    margin-right: 10%;
 }
