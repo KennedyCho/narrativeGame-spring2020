@@ -1,0 +1,20 @@
+/* .class-name #id-name */
+body {
+    margin: 0;
+}
+
+#sketch-container{
+    margin: 5%;
+}
+
+#decision-container{
+    /* center buttons inside div */
+    display: flex; 
+    justify-content: center;
+}
+
+.decision-button{
+    /* add spacing between buttons */
+    margin-left: 10%;
+    margin-right: 10%;
+}
