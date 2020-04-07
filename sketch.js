@@ -3,10 +3,11 @@ let h;
 
 let buttonA; 
 let buttonB;
+let msg; 
 
 let currentNode = 0; //index within narrative array currently at
 
-let narrative = [['nodeText', ['choice1', 'choice2'], [1, 2]],['nodeText1', ['choice1.1', 'choice2.1']],['nodeText2', ['choice1.2', 'choice2.2']]]
+let narrative = [['There are reports of a new virus.', ['choice1', 'choice2'], [1, 2]],['nodeText1', ['choice1.1', 'choice2.1'],[3, 4]],['nodeText2', ['choice1.2', 'choice2.2'],[5, 6]],['There are reports of a new virus', ['choice1', 'choice2'], [7, 8]],['There are reports of a new virus', ['choice1', 'choice2'], [9, 10]],['There are reports of a new virus', ['choice1', 'choice2'], [11, 12]]]
 
 function setup() {
   let canvas = createCanvas(windowWidth-windowWidth/9, windowHeight/2); 
@@ -17,11 +18,18 @@ function setup() {
   // link canvas to container in HTML 
   canvas.parent('sketch-container'); // allows css edits
 
+  let padding = w*0.03
   background(0); 
+  let startMsg = "The COVID-19 outbreak has forced many to adapt quickly under difficult circumstances; however, we believe this communal experience offers more than just pain and suffering. During difficult times we can also be sure to see the good in humanity as well as the bad. This project will depict the reality of some individuals (based on written first hand accounts) during the COVID-19 pandemic. By sharing these stories, we hope to encourage the public to develop a larger understanding of the current situation and their role within it."
+  textSize(w/70); 
+  textAlign(CENTER);
+  fill(255);
+  text(startMsg, padding, h*0.7, w-padding*2, h);
 
 }
 
 function removeStart(){ // remove start button function
+  background(0);
   let startButton = document.getElementById("start-button"); //assign button to var
   startButton.parentNode.removeChild(startButton); //identify the parent of startButton and delete child = startButton
 }
@@ -32,10 +40,11 @@ function inputOption(currentNode) {
 }
 
 function addText() { //update scene text
-  let msg = narrative[currentNode][0];
-  textSize(50); 
+  msg = narrative[currentNode][0];
+  textSize(w/50); 
+  textAlign(CENTER);
   fill(255);
-  text(msg, w/3, h/2);
+  text(msg, w/2, h*0.9);
 }
 
 function startClick(){ //start button
@@ -63,12 +72,14 @@ function createButtons() { //create choice A and B buttons
 
 function clickBtnA() {
   currentNode = narrative[currentNode][2][0];
+  background(0);
   inputOption(currentNode);
   addText();
 }
 
 function clickBtnB() {
   currentNode = narrative[currentNode][2][1];
+  background(0);
   inputOption(currentNode);
   addText();
 }
