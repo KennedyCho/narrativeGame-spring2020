@@ -33,8 +33,12 @@ function addText() {
   textSize(50); 
   fill(255);
   text(msg, w/3, h/2);
+}
 
-
+function testInter() {
+  background(0); 
+  fill('purple');
+  ellipse(w/2, h/2, 200); 
 }
 
 function startClick(){
@@ -66,8 +70,8 @@ function startClick(){
 
 function clickBtnA() {
   console.log("A"); 
-
   buttonACount += 1; 
+  testInter();
 }
 
 function clickBtnB() {
