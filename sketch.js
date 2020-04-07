@@ -1,7 +1,12 @@
 let w; 
 let h;
 
-let buttonACount = 0; 
+let buttonA; 
+let buttonB;
+
+let currentNode = 0; //index within narrative array currently at
+
+let narrative = [['nodeText', ['choice1', 'choice2'], [1, 2]],['nodeText1', ['choice1.1', 'choice2.1']],['nodeText2', ['choice1.2', 'choice2.2']]]
 
 function setup() {
   let canvas = createCanvas(windowWidth-windowWidth/9, windowHeight/2); 
@@ -16,80 +21,57 @@ function setup() {
 
 }
 
-function draw() {
-  // put drawing code here
-  
-}
-
-// remove start button function
-function removeStart(){
+function removeStart(){ // remove start button function
   let startButton = document.getElementById("start-button"); //assign button to var
   startButton.parentNode.removeChild(startButton); //identify the parent of startButton and delete child = startButton
 }
 
+function inputOption(currentNode) {
+  buttonA.innerHTML = narrative[currentNode][1][0]; //update buttonA option
+  buttonB.innerHTML = narrative[currentNode][1][1]; //update buttonB option
+}
 
-function addText() {
-  let msg = "Hey there!";
+function addText() { //update scene text
+  let msg = narrative[currentNode][0];
   textSize(50); 
   fill(255);
   text(msg, w/3, h/2);
 }
 
-function testInter() {
-  background(0); 
-  fill('purple');
-  ellipse(w/2, h/2, 200); 
+function startClick(){ //start button
+  removeStart(); //removes start button
+  addText(); 
+  createButtons();
 }
 
-function startClick(){
-  
-  removeStart(); //removes start button
-
-  addText();
-
-  let buttonA = document.createElement("button"); // create button
-  buttonA.innerHTML = "A"; // add text inside button
+function createButtons() { //create choice A and B buttons
+  buttonA = document.createElement("button"); // create button
   document.getElementById("decision-container").appendChild(buttonA); // add to html body
-
   buttonA.className = "decision-button";
   buttonA.id = "button-A";
-
   buttonA.addEventListener("click", clickBtnA);
 
   // buttonB
-  let buttonB = document.createElement("button"); // create button
-  buttonB.innerHTML = "B"; // add text inside button
+  buttonB = document.createElement("button"); // create button
   document.getElementById("decision-container").appendChild(buttonB); // add to html body
-
   buttonB.className = "decision-button";
   buttonB.id = "button-B";
-
   buttonB.addEventListener("click", clickBtnB);
 
+  inputOption(currentNode); // add text inside button
 }
 
 function clickBtnA() {
-  console.log("A"); 
-  buttonACount += 1; 
-  testInter();
+  currentNode = narrative[currentNode][2][0];
+  inputOption(currentNode);
+  addText();
 }
 
 function clickBtnB() {
-  console.log("B");
+  currentNode = narrative[currentNode][2][1];
+  inputOption(currentNode);
+  addText();
 }
 
 
 
-
-// testing array - pls don't delete - incomplete
-let buttonText = []; 
-
-for (let index = 0; index < 4; index++) {
-  buttonText.push([]);
-  let x = Math.pow(2, index);
-  for (let innerIndex = 0; innerIndex < x; innerIndex++) {
-    buttonText[index].push(["A", "B"]);
-  }
-  
-}
-console.log(buttonText);
