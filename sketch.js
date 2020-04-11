@@ -3,14 +3,14 @@ let h;
 
 let buttonA; 
 let buttonB;
-let msg; 
 
 let currentNode = 0; //index within narrative array currently at
 
-let narrative = [['There are reports of a new virus.', ['choice1', 'choice2'], [1, 2]],['nodeText1', ['choice1.1', 'choice2.1'],[3, 4]],['nodeText2', ['choice1.2', 'choice2.2'],[5, 6]],['There are reports of a new virus', ['choice1', 'choice2'], [7, 8]],['There are reports of a new virus', ['choice1', 'choice2'], [9, 10]],['There are reports of a new virus', ['choice1', 'choice2'], [11, 12]]]
+// research - convert to JSON?
+let narrative = [['There are reports of a new virus.', ['choice1', 'choice2'], [1, 2]],['nodeText1', ['choice1.1', 'choice2.1'],[3, 4]],['nodeText2', ['choice1.2', 'choice2.2'],[5, 6]],['There are reports of a new virus', ['choice1', 'choice2'], [7, 8]],['There are reports of a new virus', ['choice1', 'choice2'], [9, 10]],['There are reports of a new virus', ['choice1', 'choice2'], [11, 12]]];
 
 function setup() {
-  let canvas = createCanvas(windowWidth-windowWidth/9, windowHeight/2); 
+  let canvas = createCanvas(windowWidth, windowHeight*0.7); 
 
   w = width; //width of sketch canv
   h = height; //height of sketch canv
@@ -39,12 +39,8 @@ function inputOption(currentNode) {
   buttonB.innerHTML = narrative[currentNode][1][1]; //update buttonB option
 }
 
-function addText() { //update scene text
-  msg = narrative[currentNode][0];
-  textSize(w/50); 
-  textAlign(CENTER);
-  fill(255);
-  text(msg, w/2, h*0.9);
+function addText() { //update scene text  
+  document.getElementById("sceneText").innerHTML = narrative[currentNode][0];
 }
 
 function startClick(){ //start button

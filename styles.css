@@ -4,17 +4,43 @@ body {
 }
 
 #sketch-container{
-    margin: 5%;
+    margin-top: 3%;
+    z-index: -1; 
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 #decision-container{
-    /* center buttons inside div */
-    display: flex; 
-    justify-content: center;
+    top: 80%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 .decision-button{
     /* add spacing between buttons */
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    
+}
+
+#sceneText-container{
+    background: coral;
+    
+    color: white;
+    top: 85%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#sceneText{
+    
+    /* padding-left:1%; */
+    /* align-content: center; */
+
 }
