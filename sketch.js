@@ -43,6 +43,11 @@ function addText() { //update scene text
   document.getElementById("sceneText").innerHTML = narrative[currentNode][0];
 }
 
+function updateSketch() {
+  // @Linda add code here 
+  // GOAL: update background image, character image and audio according to the currentNode
+}
+
 function startClick(){ //start button
   removeStart(); //removes start button
   addText(); 
