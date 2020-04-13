@@ -48,7 +48,6 @@ function updateSketch() {
   // GOAL: update background image, character image and audio according to the currentNode
 }
 
-
 function startClick(){ //start button
   removeStart(); //removes start button
   addText(); 
