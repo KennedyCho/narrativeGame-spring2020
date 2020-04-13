@@ -46,26 +46,6 @@ function addText() { //update scene text
 function updateSketch() {
   // @Linda add code here 
   // GOAL: update background image, character image and audio according to the currentNode
- 
-  //officer
-  loadImage('assets/officer.png', img => {
-    image(img, 0, 0);
-  });
-  //girl
-  loadImage('assets/Average people.png', img => {
-    image(img, 0, 0);
-  });
-  //doctor
-  loadImage('assets/doctor.png', img => {
-    image(img, 0, 0);
-  });
-
-  let bgmLove,bgmNovember,bgmPiano,mouseClick;
-  soundFormats('mp3');
-  bgmLove = loadSound('assets/love.mp3');
-  bgmNovember = loadSound('assets/november.mp3');
-  bgmPiano = loadSound('assets/piano moment.mp3');
-  mouseClick = loadSound('assets/Mouse-Click-02-c-FesliyanStudios.com.mp3');
 }
 
 
