@@ -3,13 +3,21 @@ let h;
 
 let buttonA; 
 let buttonB;
+let buttonC; //startButton
 
 let currentNode = 0; //index within narrative array currently at
 
-// research - convert to JSON?
-let narrative = [['There are reports of a new virus.', ['choice1', 'choice2'], [1, 2]],['nodeText1', ['choice1.1', 'choice2.1'],[3, 4]],['nodeText2', ['choice1.2', 'choice2.2'],[5, 6]],['There are reports of a new virus', ['choice1', 'choice2'], [7, 8]],['There are reports of a new virus', ['choice1', 'choice2'], [9, 10]],['There are reports of a new virus', ['choice1', 'choice2'], [11, 12]]];
+let narrative; 
+
+function preload() {
+  loadJSON('narrative.json', function(loadedData){
+    narrative = loadedData;
+  })
+}
 
 function setup() {
+  console.log(narrative);
+  
   let canvas = createCanvas(windowWidth, windowHeight*0.7); 
 
   w = width; //width of sketch canv
@@ -26,21 +34,20 @@ function setup() {
   fill(255);
   text(startMsg, padding, h*0.7, w-padding*2, h);
 
+  document.getElementById("start-button").addEventListener("click", startClick);
 }
 
-function removeStart(){ // remove start button function
-  background(0);
-  let startButton = document.getElementById("start-button"); //assign button to var
-  startButton.parentNode.removeChild(startButton); //identify the parent of startButton and delete child = startButton
-}
 
 function inputOption(currentNode) {
-  buttonA.innerHTML = narrative[currentNode][1][0]; //update buttonA option
-  buttonB.innerHTML = narrative[currentNode][1][1]; //update buttonB option
+  console.log(currentNode);
+  
+  buttonA.innerHTML = narrative[currentNode].buttonText[0]; //update buttonA option
+  buttonB.innerHTML = narrative[currentNode].buttonText[1]; //update buttonB option
+  buttonC.innerHTML = narrative[currentNode].buttonText[2]; //update buttonC option
 }
 
 function addText() { //update scene text  
-  document.getElementById("sceneText").innerHTML = narrative[currentNode][0];
+  document.getElementById("sceneText").innerHTML = narrative[currentNode].sceneText;
 }
 
 function updateSketch() {
@@ -48,42 +55,47 @@ function updateSketch() {
   // GOAL: update background image, character image and audio according to the currentNode
 }
 
-function startClick(){ //start button
-  removeStart(); //removes start button
-  addText(); 
-  createButtons();
-}
+function startClick() { 
+  addText();// update scene Text
 
-function createButtons() { //create choice A and B buttons
-  buttonA = document.createElement("button"); // create button
-  document.getElementById("decision-container").appendChild(buttonA); // add to html body
-  buttonA.className = "decision-button";
-  buttonA.id = "button-A";
-  buttonA.addEventListener("click", clickBtnA);
+  // buttonA
+  buttonA = document.getElementById("start-button");
+  buttonA.removeEventListener("click", startClick)
+  buttonA.addEventListener("click", clickBtnA)
 
-  // buttonB
+  //create choice A and B buttons
   buttonB = document.createElement("button"); // create button
   document.getElementById("decision-container").appendChild(buttonB); // add to html body
   buttonB.className = "decision-button";
   buttonB.id = "button-B";
   buttonB.addEventListener("click", clickBtnB);
 
+  // buttonB
+  buttonC = document.createElement("button"); // create button
+  document.getElementById("decision-container").appendChild(buttonC); // add to html body
+  buttonC.className = "decision-button";
+  buttonC.id = "button-C";
+  buttonC.addEventListener("click", clickBtnC);
+
   inputOption(currentNode); // add text inside button
 }
 
 function clickBtnA() {
-  currentNode = narrative[currentNode][2][0];
-  background(0);
+  currentNode = narrative[currentNode].buttonRoute[0];
   inputOption(currentNode);
   addText();
 }
 
 function clickBtnB() {
-  currentNode = narrative[currentNode][2][1];
-  background(0);
+  currentNode = narrative[currentNode].buttonRoute[1];
   inputOption(currentNode);
   addText();
 }
 
+function clickBtnC() {
+  currentNode = narrative[currentNode].buttonRoute[2];
+  inputOption(currentNode);
+  addText();
+}
 
 
