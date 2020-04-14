@@ -1,16 +1,16 @@
-let w; 
+let w;
 let h;
 
-let buttonA; 
+let buttonA;
 let buttonB;
 let buttonC; //startButton
 
 let currentNode = 0; //index within narrative array currently at
 
-let narrative; 
+let narrative;
 
 function preload() {
-  loadJSON('narrative.json', function(loadedData){
+  loadJSON('narrative.json', function (loadedData) {
     narrative = loadedData;
   })
 }
@@ -18,8 +18,7 @@ function preload() {
 function setup() {
   console.log(narrative);
   console.log(currentNode);
-  
-  let canvas = createCanvas(windowWidth, windowHeight*0.7); 
+  let canvas = createCanvas(windowWidth, windowHeight*0.7);
 
   w = width; //width of sketch canv
   h = height; //height of sketch canv
@@ -27,9 +26,9 @@ function setup() {
   // link canvas to container in HTML 
   canvas.parent('sketch-container'); // allows css edits
 
-  background(0); 
+  background(0);
 
-  addText(); 
+  addText();
 
   document.getElementById("start-button").addEventListener("click", startClick);
 }
@@ -37,7 +36,7 @@ function setup() {
 
 function inputOption(currentNode) {
   console.log(currentNode);
-  
+
   buttonA.innerHTML = narrative[currentNode].buttonText[0]; //update buttonA option
   buttonB.innerHTML = narrative[currentNode].buttonText[1]; //update buttonB option
   buttonC.innerHTML = narrative[currentNode].buttonText[2]; //update buttonC option
@@ -50,8 +49,27 @@ function addText() { //update scene text
 function updateSketch() {
   // @Linda add code here 
   // GOAL: update background image, character image and audio according to the currentNode
-}
+  //officer
+  // loadImage('assets/officer.png', img => {
+  //   image(img, 0, 0);
+  // });
+  // //girl
+  // loadImage('assets/Average people.png', img => {
+  //   image(img, 0, 0);
+  // });
+  // //doctor
+  // loadImage('assets/doctor.png', img => {
+  //   image(img, 0, 0);
+  // });
 
+  // let bgmLove, bgmNovember, bgmPiano, mouseClick;
+  // soundFormats('mp3');
+  // bgmLove = loadSound('assets/love.mp3');
+  // bgmNovember = loadSound('assets/november.mp3');
+  // bgmPiano = loadSound('assets/piano moment.mp3');
+  // mouseClick = loadSound('assets/Mouse-Click-02-c-FesliyanStudios.com.mp3');
+
+}
 function startClick() { 
   currentNode ++;
   addText();// update scene Text
@@ -60,7 +78,6 @@ function startClick() {
   buttonA = document.getElementById("start-button");
   buttonA.removeEventListener("click", startClick)
   buttonA.addEventListener("click", clickBtnA)
-
   //create choice A and B buttons
   buttonB = document.createElement("button"); // create button
   document.getElementById("decision-container").appendChild(buttonB); // add to html body
@@ -74,7 +91,7 @@ function startClick() {
   buttonC.className = "decision-button";
   buttonC.id = "button-C";
   buttonC.addEventListener("click", clickBtnC);
- 
+
   inputOption(currentNode); // add text inside button
 }
 
@@ -95,5 +112,4 @@ function clickBtnC() {
   inputOption(currentNode);
   addText();
 }
-
 
