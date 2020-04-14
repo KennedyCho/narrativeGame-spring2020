@@ -17,6 +17,7 @@ function preload() {
 
 function setup() {
   console.log(narrative);
+  console.log(currentNode);
   
   let canvas = createCanvas(windowWidth, windowHeight*0.7); 
 
@@ -26,13 +27,9 @@ function setup() {
   // link canvas to container in HTML 
   canvas.parent('sketch-container'); // allows css edits
 
-  let padding = w*0.03
   background(0); 
-  let startMsg = "The COVID-19 outbreak has forced many to adapt quickly under difficult circumstances; however, we believe this communal experience offers more than just pain and suffering. During difficult times we can also be sure to see the good in humanity as well as the bad. This project will depict the reality of some individuals (based on written first hand accounts) during the COVID-19 pandemic. By sharing these stories, we hope to encourage the public to develop a larger understanding of the current situation and their role within it."
-  textSize(w/70); 
-  textAlign(CENTER);
-  fill(255);
-  text(startMsg, padding, h*0.7, w-padding*2, h);
+
+  addText(); 
 
   document.getElementById("start-button").addEventListener("click", startClick);
 }
@@ -56,6 +53,7 @@ function updateSketch() {
 }
 
 function startClick() { 
+  currentNode ++;
   addText();// update scene Text
 
   // buttonA
@@ -76,7 +74,7 @@ function startClick() {
   buttonC.className = "decision-button";
   buttonC.id = "button-C";
   buttonC.addEventListener("click", clickBtnC);
-
+ 
   inputOption(currentNode); // add text inside button
 }
 
