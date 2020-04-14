@@ -4,7 +4,6 @@
     "buttonText": ["START"],
     "buttonRoute": [1],
     "backgroundImg": "urlVar"},
-
   {"sceneText": "What will your role be?",
     "buttonText": ["Civilian", "Doctor", "Police Officer"],
     "buttonRoute": [2, 2, 10],
@@ -29,8 +28,6 @@
     "buttonText": ["But they refuse", "They say they will follow others", "They listen to your advice"],
     "buttonRoute": [14, 15, 16],
     "backgroundImg": "urlVar"}
-
-    
 ]
 
 
