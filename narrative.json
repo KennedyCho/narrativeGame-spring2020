@@ -7,10 +7,10 @@
     "buttonRoute": [
       1
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
-    "sceneText": "What will your role be?",
+    "sceneText": "There have been countless people affected by this novel coronavirus; some have played pivotal roles in the development of this situation. What will your role be?",
     "buttonText": [
       "Civilian",
       "Doctor",
@@ -21,10 +21,10 @@
       17,
       28
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
-    "sceneText": "There have been rumors of a new illness going around. What do you think of them?",
+    "sceneText": "There have been rumors of a new illness going around. Nothing concrete has been presented but an influx of pnemonia cases in Wuhan have been detected. What is your response?",
     "buttonText": [
       "They're just rumors.",
       "I don't know anyone ill but, I believe the rumors.",
@@ -35,13 +35,13 @@
       4,
       1
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
-    "sceneText": "The situation exacerbates rapidly. Lots of people are infected.",
+    "sceneText": "Within two weeks local hospitals have reported a drastic surge of infections. The situation continues to balloon rapidly. By now cases are increasing daily. Do you ...",
     "buttonText": [
       "Immediately believe that the situation might be worse.",
-      "I still think they're just rumors",
+      "Hold onto the blief that they're just rumors",
       "Go back to the last page"
     ],
     "buttonRoute": [
@@ -49,13 +49,13 @@
       6,
       2
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
-    "sceneText": "You don't think that's rumor. There must exist a new virus.",
+    "sceneText": "The consistent reports have proved to be convincing. With this information what will you do?",
     "buttonText": [
-      "But it doesn't matter.",
-      "Buy face masks and sanitizers.",
+      "Believe that the situation is not that serious.",
+      "Stockpile survival goods",
       "Go back to the last page"
     ],
     "buttonRoute": [
@@ -63,7 +63,7 @@
       5,
       2
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "You try to persuade your familes to wear face masks",
@@ -77,7 +77,7 @@
       7,
       7
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You still believe they are just rumors, and walk on street without wearing face mask. However, the central government warns the severeness of the epidemic, and you finally realize that it's not a joke.",
@@ -91,7 +91,7 @@
       7,
       3
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "Because people hoard face masks, even doctors don't have enough face masks",
@@ -105,7 +105,7 @@
       11,
       1
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "So your decision is...",
@@ -119,7 +119,7 @@
       10,
       7
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "Thanks for your donation, though they still lack face masks, your donation makes them feel the warmth and kindness",
@@ -133,7 +133,7 @@
       16,
       8
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "The society doesn't require you to donate, but you feel guilty of being selfish. Luckily, plants are doing their best to produce face masks.",
@@ -147,7 +147,7 @@
       16,
       8
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You don't have face masks, and you...",
@@ -161,7 +161,7 @@
       12,
       7
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You changed your attitude and stay at home to protect both yourself and others. What you've experienced this time changed your thoughts and values.",
@@ -175,7 +175,7 @@
       16,
       11
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "On the one hand, you condemn others on the internet, on the other hand, you feel extremely panic in the real world",
@@ -189,7 +189,7 @@
       15,
       11
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Since you don't have face masks, you are infected in the end",
@@ -203,7 +203,7 @@
       1,
       100
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Fortunately, though you don't have face mask, you choose to stay at home and thus avoid being infected",
@@ -217,7 +217,7 @@
       16,
       13
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "The epidemic is continuing, but something has changed... What will happen next? When will it end? No one knows....",
@@ -231,7 +231,7 @@
       1,
       100
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You discovered a novel virus, what will you do?",
@@ -245,7 +245,7 @@
       20,
       1
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "The government doesn't trust you, and they title you as 'rumors'.",
@@ -259,7 +259,7 @@
       20,
       19
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "However, the public still don't trust you, and you are punished for 'spreading rumors'. After one month, the epidemic breaks out in Wuhan, and now your decision is...",
@@ -273,7 +273,7 @@
       20,
       18
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Since you didn't spread the information or you didn't choose to help Wuhai, you have no access to further information",
@@ -287,7 +287,7 @@
       21,
       19
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You are in Wuhai helping patients. However, the officers refuse to give you more supplies, which is their revenge, since your report may result in their resignation",
@@ -301,7 +301,7 @@
       22,
       26
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "The government refuses to give you more supplies since they said 'our supplies are enough'",
@@ -315,7 +315,7 @@
       26,
       21
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Your action of asking for supplies debunks the lie of the government. To revenge, the government refuses to give you donations and supplies from the society",
@@ -329,7 +329,7 @@
       25,
       22
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "When you are carrying supplies, you are captured by jounalist from central government. Now, the whole country feel extremely angry about the local government's actions",
@@ -343,7 +343,7 @@
       27,
       23
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You get some supplies from the society, and now you and your colleagues have basic protective equipments",
@@ -357,7 +357,7 @@
       27,
       23
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You break down and refuse to work in hospital any more. So you have no access to further information",
@@ -371,7 +371,7 @@
       1,
       21
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "With the aid of society and central government, the situation becomes better and better. But we still don't know when the epidemic will past. Everything remains to be seen...",
@@ -385,7 +385,7 @@
       1,
       100
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
 
 
@@ -404,7 +404,7 @@
       30,
       36
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You decide to conceal the report, and you should do something to respond to public's reactions, you will...",
@@ -418,7 +418,7 @@
       31,
       28
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Since you release all the information at the same time, the society gets into great panic and disorder",
@@ -432,7 +432,7 @@
       36,
       28
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Since you said there is no novel virus, but allow the news to spread, this mismatch results in social panic",
@@ -446,7 +446,7 @@
       36,
       29
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "You punished the doctors and rumors disappear. However, people fail to be aware of the new virus, and within one month, thousands of people are infected",
@@ -460,7 +460,7 @@
       34,
       29
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "To make your lie plausible, you...",
@@ -474,7 +474,7 @@
       37,
       32
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "considering the economics, you...",
@@ -488,7 +488,7 @@
       35,
       32
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Congratulations! You adapt the correct solution and attitude to handle this virus and take it under control in the end!",
@@ -502,7 +502,7 @@
       1,
       100
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   },
   {
     "sceneText": "Because of your right strategy of releasing information, the public realize the severeness of this disease. Now, your next decision is...",
@@ -516,7 +516,7 @@
       37,
       31
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "Because of your hesitation, a large number of potential patients escape Wuhan and spread virus. Lots of doctors fly to Wuhan to help patients, you decide to...",
@@ -530,7 +530,7 @@
       41,
       1
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "However it is not the truth, and the doctors begin asking for supplies from the society",
@@ -544,7 +544,7 @@
       41,
       37
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "The situation becomes even worse, and you are criticized by the central government. You have to apologize and give supplies to the hospital, but everything is too late. The virus has already spread widely.",
@@ -558,7 +558,7 @@
       1,
       38
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "Your series of mistakes make the whole country shuts down—-traffic, industry, economics, tourism...And no one knows when the epidemic will past. Everything remains to be seen",
@@ -572,7 +572,7 @@
       1,
       100
     ],
-    "backgroundImg": "urlVar"
+    "back": 1
   },
   {
     "sceneText": "Gradually, the situation becomes better and the epidemic is under control. But no one knows when will it totally disappear...",
@@ -586,7 +586,7 @@
       1,
       100
     ],
-    "backgroundImg": "urlVar"
+    "back": 0
   }
 
 ]

@@ -16,7 +16,6 @@ body {
 }
 
 #decision-container button{
-
     display: flex;
     flex-direction: column;  /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -49,7 +48,7 @@ body {
 }
 
 #sceneText-container{
-    background:rgb(255, 255, 255, 0.6);;
+    background:rgb(255, 255, 255, 0.6);
     width: auto;
     max-height: 40vh;
     color: black;
@@ -65,5 +64,4 @@ body {
     padding-left:5%;
     padding-right: 5%;
     font-size: 1.2vw;
-
 }

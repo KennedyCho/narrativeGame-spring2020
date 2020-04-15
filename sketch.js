@@ -37,8 +37,6 @@ function preload() {
 }
 
 function setup() {
-  console.log(narrative);
-  console.log(currentNode);
   let canvas = createCanvas(windowWidth, windowHeight*0.995);
 
   w = width; //width of sketch canv
@@ -55,7 +53,10 @@ function setup() {
 }
 
 function inputOption(currentNode) {
-  console.log(currentNode);
+  if (narrative[currentNode].back == 1) {
+    
+    document.getElementById('button-C').style.background = 'rgb(255, 0, 0, 0.3)';
+  }
 
   buttonA.innerHTML = narrative[currentNode].buttonText[0]; //update buttonA option
   buttonB.innerHTML = narrative[currentNode].buttonText[1]; //update buttonB option
@@ -105,6 +106,7 @@ function startClick() {
   // buttonB
   buttonC = document.createElement("button"); // create button
   document.getElementById("decision-container").appendChild(buttonC); // add to html body
+  buttonC.id = "button-C"
   buttonC.className = "decision-button";
   buttonC.id = "button-C";
   buttonC.addEventListener("click", clickBtnC);
