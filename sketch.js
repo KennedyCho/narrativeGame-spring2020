@@ -81,6 +81,12 @@ function startClick() {
   buttonA = document.getElementById("start-button");
   buttonA.removeEventListener("click", startClick)
   buttonA.addEventListener("click", clickBtnA)
+  
+  buttonA = document.createElement("button"); // create button
+  document.getElementById("decision-container").appendChild(buttonA); // add to html body
+  buttonA.className = "decision-button";
+  buttonA.id = "button-A";
+  buttonA.addEventListener("click", clickBtnA);
 
   //create choice A and B buttons
   buttonB = document.createElement("button"); // create button
