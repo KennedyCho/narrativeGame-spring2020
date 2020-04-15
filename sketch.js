@@ -19,6 +19,9 @@ let backImg1;
 let backImg2;
 let backImg3;
 
+let click;
+let bgm;
+
 let size; 
 
 function preload() {
@@ -30,10 +33,13 @@ function preload() {
   backImg1 = loadImage('assets/backImg1.jpg');
   backImg2 = loadImage('assets/backImg2.png');
   backImg3 = loadImage('assets/backImg3.jpg');
-  
+
   loadJSON('narrative.json', function (loadedData) {
     narrative = loadedData;
   })
+
+  bgm = loadSound('assets/love.mp3');
+  click = loadSound('assets/Mouse-Click-02-c-FesliyanStudios.com.mp3');
 }
 
 function setup() {
@@ -70,20 +76,9 @@ function updateSketch() {
   background(backImg);
   character.resize(size[0], size[1]);
   image(character, w/4.5, h*0.3); //character image
-
-
-  // @Linda add code here 
-  // GOAL: update background image, character image and audio according to the currentNode
   
-
-  // let bgmLove, bgmNovember, bgmPiano, mouseClick;
-  // soundFormats('mp3');
-  // bgmLove = loadSound('assets/love.mp3');
-  // bgmNovember = loadSound('assets/november.mp3');
-  // bgmPiano = loadSound('assets/piano moment.mp3');
-  // mouseClick = loadSound('assets/Mouse-Click-02-c-FesliyanStudios.com.mp3');
-
 }
+
 function startClick() { 
   currentNode ++;
   addText();// update scene Text
@@ -123,7 +118,6 @@ function clickBtnA() {
   updateSketch();
   addText();
   inputOption(currentNode);
-
 }
 
 function clickBtnB() {
@@ -143,11 +137,9 @@ function clickBtnC() {
     character = charImg3; // assign character image 
     size = [400, 0];
     backImg = backImg3;
-
   }
   currentNode = narrative[currentNode].buttonRoute[2];
   updateSketch();
   inputOption(currentNode);
   addText();
 }
-

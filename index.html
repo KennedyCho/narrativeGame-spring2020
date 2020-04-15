@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Audio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eye of the Storm</title>
@@ -15,7 +16,17 @@
   <!-- p5 linked with file -->
   <script src=lib/p5/p5.js></script>
 </head>
-<body>
+
+<body onclick='play()'>
+
+  <script> 
+  function play(){
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+  </script>
+  <audio id="audio"src="assets/click!.mp3"></audio>
+
   <div id="title">
     <h1>Eye of the Storm</h1>
     <p>Kennedy Cambra-Cho<br>Linda</p>
@@ -38,3 +49,9 @@
 </body>
 <script src="./sketch.js"></script>
 </html>
+
+<audio autoplay>
+  <source src="assets/love.mp3" type="audio/mpeg">
+
+
+
