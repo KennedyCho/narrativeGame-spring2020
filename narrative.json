@@ -1,99 +1,592 @@
-
 [
-  {"sceneText": "The COVID-19 outbreak has forced many to adapt quickly under difficult circumstances; however, we believe this communal experience offers more than just pain and suffering. During difficult times we can also be sure to see the good in humanity as well as the bad. This project will depict the reality of some individuals (based on written first hand accounts) during the COVID-19 pandemic. By sharing these stories, we hope to encourage the public to develop a larger understanding of the current situation and their role within it.",
-    "buttonText": ["START"],
-    "buttonRoute": [1],
-    "backgroundImg": "urlVar"},
+  {
+    "sceneText": "The COVID-19 outbreak has forced many to adapt quickly under difficult circumstances; however, we believe this communal experience offers more than just pain and suffering. During difficult times we can also be sure to see the good in humanity as well as the bad. This project will depict the reality of some individuals (based on written first hand accounts) during the COVID-19 pandemic. By sharing these stories, we hope to encourage the public to develop a larger understanding of the current situation and their role within it.",
+    "buttonText": [
+      "START"
+    ],
+    "buttonRoute": [
+      1
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "What will your role be?",
+    "buttonText": [
+      "Civilian",
+      "Doctor",
+      "Police Officer"
+    ],
+    "buttonRoute": [
+      2,
+      17,
+      28
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "There have been rumors of a new illness going around. What do you think of them?",
+    "buttonText": [
+      "They're just rumors.",
+      "I don't know anyone ill but, I believe the rumors.",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      3,
+      4,
+      1
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "The situation exacerbates rapidly. Lots of people are infected.",
+    "buttonText": [
+      "Immediately believe that the situation might be worse.",
+      "I still think they're just rumors",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      5,
+      6,
+      2
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You don't think that's rumor. There must exist a new virus.",
+    "buttonText": [
+      "But it doesn't matter.",
+      "Buy face masks and sanitizers.",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      3,
+      5,
+      2
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You try to persuade your familes to wear face masks",
+    "buttonText": [
+      "They listen to my advice, and begin buying and hoarding face masks",
+      "They refuse to wear face mask, but I insist them to wear it",
+      "They don't listen to my advice, and I just give up persuading them"
+    ],
+    "buttonRoute": [
+      7,
+      7,
+      7
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You still believe they are just rumors, and walk on street without wearing face mask. However, the central government warns the severeness of the epidemic, and you finally realize that it's not a joke.",
+    "buttonText": [
+      "Try to buy face masks, but they are all sold out",
+      "Alright,I cannot control life and death and I don't want to care.",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      7,
+      7,
+      3
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Because people hoard face masks, even doctors don't have enough face masks",
+    "buttonText": [
+      "I have face masks",
+      "Because of my ignorance, I don't have face masks",
+      "Start again"
+    ],
+    "buttonRoute": [
+      8,
+      11,
+      1
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "So your decision is...",
+    "buttonText": [
+      "donating some of face masks to doctors",
+      "not donating face masks since I also need them",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      9,
+      10,
+      7
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Thanks for your donation, though they still lack face masks, your donation makes them feel the warmth and kindness",
+    "buttonText": [
+      "Click me to see the ending",
+      "See the ending",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      16,
+      16,
+      8
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "The society doesn't require you to donate, but you feel guilty of being selfish. Luckily, plants are doing their best to produce face masks.",
+    "buttonText": [
+      "Click me to see the ending",
+      "See the ending",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      16,
+      16,
+      8
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You don't have face masks, and you...",
+    "buttonText": [
+      "condemn others for hoarding face masks",
+      "reflect myself and think what results in my current situation",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      13,
+      12,
+      7
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You changed your attitude and stay at home to protect both yourself and others. What you've experienced this time changed your thoughts and values.",
+    "buttonText": [
+      "Click me to see the ending",
+      "See the ending",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      16,
+      16,
+      11
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "On the one hand, you condemn others on the internet, on the other hand, you feel extremely panic in the real world",
+    "buttonText": [
+      "I decide to go out to relax",
+      "I'll just stay at home",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      14,
+      15,
+      11
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Since you don't have face masks, you are infected in the end",
+    "buttonText": [
+      "Go back to the last page",
+      "Start again",
+      "Thanks for playing"
+    ],
+    "buttonRoute": [
+      13,
+      1,
+      100
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Fortunately, though you don't have face mask, you choose to stay at home and thus avoid being infected",
+    "buttonText": [
+      "Click me to see the ending",
+      "See the ending",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      16,
+      16,
+      13
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "The epidemic is continuing, but something has changed... What will happen next? When will it end? No one knows....",
+    "buttonText": [
+      "Thanks for playing!",
+      "Start again",
+      "Thanks for playing!"
+    ],
+    "buttonRoute": [
+      100,
+      1,
+      100
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You discovered a novel virus, what will you do?",
+    "buttonText": [
+      "Report it to my superior",
+      "don't report it",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      18,
+      20,
+      1
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "The government doesn't trust you, and they title you as 'rumors'.",
+    "buttonText": [
+      "I insist to report it",
+      "That's it. I don't want to find trouble for myself",
+      "I'll secretly tell my colleagues and families"
+    ],
+    "buttonRoute": [
+      19,
+      20,
+      19
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "However, the public still don't trust you, and you are punished for 'spreading rumors'. After one month, the epidemic breaks out in Wuhan, and now your decision is...",
+    "buttonText": [
+      "I'm a doctor. I have the responsibility to help Wuhan",
+      "I'm so disappointed with what they've done to me, and I won't help them.",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      21,
+      20,
+      18
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Since you didn't spread the information or you didn't choose to help Wuhai, you have no access to further information",
+    "buttonText": [
+      "Start again",
+      "I'll help Wuhai",
+      "I'll spread information secretly"
+    ],
+    "buttonRoute": [
+      1,
+      21,
+      19
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You are in Wuhai helping patients. However, the officers refuse to give you more supplies, which is their revenge, since your report may result in their resignation",
+    "buttonText": [
+      "I'll ask for supplies from the society",
+      "I'll ask for supplies from the government",
+      "I break down and I don't want to stay in hospital any more"
+    ],
+    "buttonRoute": [
+      23,
+      22,
+      26
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "The government refuses to give you more supplies since they said 'our supplies are enough'",
+    "buttonText": [
+      "Ask for supplies from the society",
+      "I break down and I don't want to stay in hospital any more",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      23,
+      26,
+      21
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Your action of asking for supplies debunks the lie of the government. To revenge, the government refuses to give you donations and supplies from the society",
+    "buttonText": [
+      "I'll carry supplies by my own from express center",
+      "I'll ask the society to deliver supplies directly to my hospital",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      24,
+      25,
+      22
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "When you are carrying supplies, you are captured by jounalist from central government. Now, the whole country feel extremely angry about the local government's actions",
+    "buttonText": [
+      "Express my gratitude for society",
+      "Hope everything will be better in the future",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      27,
+      27,
+      23
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You get some supplies from the society, and now you and your colleagues have basic protective equipments",
+    "buttonText": [
+      "The situation becomes better",
+      "Express my gratitude for society",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      27,
+      27,
+      23
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You break down and refuse to work in hospital any more. So you have no access to further information",
+    "buttonText": [
+      "Now I cheer up",
+      "Start again",
+      "I'm OK now"
+    ],
+    "buttonRoute": [
+      21,
+      1,
+      21
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "With the aid of society and central government, the situation becomes better and better. But we still don't know when the epidemic will past. Everything remains to be seen...",
+    "buttonText": [
+      "Thanks for playing",
+      "Start again",
+      "Thanks for playing"
+    ],
+    "buttonRoute": [
+      100,
+      1,
+      100
+    ],
+    "backgroundImg": "urlVar"
+  },
 
-  {"sceneText": "What will your role be?",
-    "buttonText": ["Civilian", "Doctor", "Police Officer"],
-    "buttonRoute": [2, 100, 100],
-    "backgroundImg": "urlVar"},
 
-  {"sceneText": "There have been rumors of a new illness going around. What do you think of them?",
-    "buttonText": ["They're just rumors.", "I don't know anyone ill but, I believe the rumors.", "Go back to the last page"],
-    "buttonRoute": [3, 4, 1],
-    "backgroundImg": "urlVar"},
 
-  {"sceneText": "The situation exacerbates rapidly. Lots of people are infected.",
-    "buttonText": ["Immediately believe that the situation might be worse.", "Condemn the government for concealing information.", "Go back to the last page"],
-    "buttonRoute": [5, 6, 2],
-    "backgroundImg": "urlVar"},
 
-  {"sceneText": "You don't think that's rumor. There must exist a new virus.",
-    "buttonText": ["But it doesn't matter.", "Buy face masks and sanitizers.", "Go back to the last page"],
-    "buttonRoute": [3, 5, 2],
-    "backgroundImg": "urlVar"},
 
-  {"sceneText": "You try to persuade your familes to wear face masks",
-    "buttonText": ["They listen to my advice, and begin buying and hoarding face masks", "They refuse to wear face mask, but I insist them to wear it", "They don't listen to my advice, and I just give up persuading them"],
-    "buttonRoute": [7, 7, 16],
-    "backgroundImg": "urlVar"},
+  {
+    "sceneText": "You are a police officer. One day, you see the report of a novel virus, what will you do?",
+    "buttonText": [
+      "Conceal the report to stablize people's heart",
+      "Reveal the exact real information",
+      "Reveal information step by step, and may hide some severe cases"
+    ],
+    "buttonRoute": [
+      29,
+      30,
+      36
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You decide to conceal the report, and you should do something to respond to public's reactions, you will...",
+    "buttonText": [
+      "punish the doctors for spreading rumors",
+      "not punish the doctors, and allow the information to spread secretly",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      32,
+      31,
+      28
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Since you release all the information at the same time, the society gets into great panic and disorder",
+    "buttonText": [
+      "Start again",
+      "I'll release information step by step",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      1,
+      36,
+      28
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Since you said there is no novel virus, but allow the news to spread, this mismatch results in social panic",
+    "buttonText": [
+      "Start again",
+      "I'll release information step by step",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      2,
+      36,
+      29
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "You punished the doctors and rumors disappear. However, people fail to be aware of the new virus, and within one month, thousands of people are infected",
+    "buttonText": [
+      "I will still hide the real information to straighten out contradictions in my lie and make it plausible",
+      "I have to release information now",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      33,
+      34,
+      29
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "To make your lie plausible, you...",
+    "buttonText": [
+      "still open train stations and airports",
+      "hesitate about closing train stations and airports",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      37,
+      37,
+      32
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "considering the economics, you...",
+    "buttonText": [
+      "hesitate about closing train stations and airports",
+      "still decide to close train stations and airports. Lives are more valuable.",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      37,
+      35,
+      32
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Congratulations! You adapt the correct solution and attitude to handle this virus and take it under control in the end!",
+    "buttonText": [
+      "Thanks for playing",
+      "Start again",
+      "Thanks for playing"
+    ],
+    "buttonRoute": [
+      100,
+      1,
+      100
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Because of your right strategy of releasing information, the public realize the severeness of this disease. Now, your next decision is...",
+    "buttonText": [
+      "Close train stations and airports to prevent the virus from spreading",
+      "I hesitate about closing train stations and airports",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      35,
+      37,
+      31
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Because of your hesitation, a large number of potential patients escape Wuhan and spread virus. Lots of doctors fly to Wuhan to help patients, you decide to...",
+    "buttonText": [
+      "tell the public that there are adequate supplies in Wuhan",
+      "tell the public the real situation, and appeal them to donate money and supplies",
+      "Start again"
+    ],
+    "buttonRoute": [
+      38,
+      41,
+      1
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "However it is not the truth, and the doctors begin asking for supplies from the society",
+    "buttonText": [
+      "I'll revenge them by not giving them supplies",
+      "I decide to apologize to society, and give the hospitals donations and supplies",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      39,
+      41,
+      37
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "The situation becomes even worse, and you are criticized by the central government. You have to apologize and give supplies to the hospital, but everything is too late. The virus has already spread widely.",
+    "buttonText": [
+      "See the ending",
+      "Start again",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      40,
+      1,
+      38
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Your series of mistakes make the whole country shuts down—-traffic, industry, economics, tourism...And no one knows when the epidemic will past. Everything remains to be seen",
+    "buttonText": [
+      "Thanks for playing",
+      "Start again",
+      "Go back to the last page"
+    ],
+    "buttonRoute": [
+      100,
+      1,
+      100
+    ],
+    "backgroundImg": "urlVar"
+  },
+  {
+    "sceneText": "Gradually, the situation becomes better and the epidemic is under control. But no one knows when will it totally disappear...",
+    "buttonText": [
+      "Thanks for playing",
+      "Start again",
+      "Thanks for playing"
+    ],
+    "buttonRoute": [
+      100,
+      1,
+      100
+    ],
+    "backgroundImg": "urlVar"
+  }
 
-  {"sceneText": "You still believe they are just rumors, and walk on street without wearing face mask. However, the central government warns the severeness of the epidemic, and you finally realize that it's not a joke.",
-    "buttonText": ["Try to buy face masks, but they are all sold out", "Alright,I cannot control life and death and I don't want to care.", "Go back to the last page"],
-    "buttonRoute": [7, 10, 10],
-    "backgroundImg": "urlVar"}, 
-
-  {"sceneText": "Because people hoard face masks, even doctors don't have enough face masks",
-    "buttonText": ["I have face masks", "Because of my ignorance, I don't have face masks", "Start again"],
-    "buttonRoute": [8, 11, 1],
-    "backgroundImg": "urlVar"},
-    
-  {"sceneText": "So your decision is...",
-    "buttonText": ["donating some of face masks to doctors", "not donating face masks since I also need them", "Go back to the last page"],
-    "buttonRoute": [9, 10, 7],
-    "backgroundImg": "urlVar"}, 
-
-  {"sceneText": "Thanks for your donation, though they still lack face masks, your donation makes them feel the warmth and kindness",
-    "buttonText": ["Click me to see the ending", "See the ending", "Go back to the last page"],
-    "buttonRoute": [16, 16, 8],
-    "backgroundImg": "urlVar"},
-
-  {"sceneText": "The society doesn't require you to donate, but you feel guilty of being selfish. Luckily, plants are doing their best to produce face masks.",
-    "buttonText": ["Click me to see the ending", "See the ending", "Go back to the last page"],
-    "buttonRoute": [16, 16, 8],
-    "backgroundImg": "urlVar"},
-
-  {"sceneText": "You don't have face masks, and you...",
-    "buttonText": ["condemn others for hoarding face masks", "reflect myself and think what results in my current situation", "Go back to the last page"],
-    "buttonRoute": [13, 12, 7],
-    "backgroundImg": "urlVar"}, 
-
-  {"sceneText": "You changed your attitude and stay at home to protect both yourself and others. What you've experienced this time changed your thoughts and values.",
-     "buttonText": ["Click me to see the ending", "See the ending", "Go back to the last page"],
-     "buttonRoute": [2, 10, 10],
-     "backgroundImg": "urlVar"},
-
-  {"sceneText": "On the one hand, you condemn others on the internet, on the other hand, you feel extremely panic in the real world",
-    "buttonText": ["I decide to go out to relax", "I'll just stay at home", "Go back to the last page"],
-    "buttonRoute": [14, 15, 11],
-    "backgroundImg": "urlVar"}, 
-
-  {"sceneText": "Since you don't have face masks, you are infected in the end",
-    "buttonText": ["Go back to the last page", "Start again", "Thanks for playing"],
-    "buttonRoute": [13, 1, 100],
-    "backgroundImg": "urlVar"},
-
-  {"sceneText": "Fortunately, though you don't have face mask, you choose to stay at home and thus avoid being infected",
-    "buttonText": ["Click me to see the ending", "See the ending", "Go back to the last page"],
-    "buttonRoute": [16, 16, 13],
-    "backgroundImg": "urlVar"},
-
-  {"sceneText": "The epidemic is continuing, but something has changed... What will happen next? When will it end? No one knows....",
-    "buttonText": ["Thanks for playing!", "Start again", "Thanks for playing!"],
-    "buttonRoute": [100, 1, 100],
-    "backgroundImg": "urlVar"},
-
-  {"sceneText": "What will your role be?",
-    "buttonText": ["Civilian", "Doctor", "Police Officer"],
-    "buttonRoute": [2, 10, 10],
-    "backgroundImg": "urlVar"},
-
-  {"sceneText": "What will your role be?",
-    "buttonText": ["Civilian", "Doctor", "Police Officer"],
-    "buttonRoute": [2, 10, 10],
-    "backgroundImg": "urlVar"}
 ]
-
-
