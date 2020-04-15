@@ -18,8 +18,7 @@ function preload() {
 function setup() {
   console.log(narrative);
   console.log(currentNode);
-
-  let canvas = createCanvas(windowWidth, windowHeight * 0.7);
+  let canvas = createCanvas(windowWidth, windowHeight*0.7);
 
   w = width; //width of sketch canv
   h = height; //height of sketch canv
@@ -70,23 +69,17 @@ function updateSketch() {
   // bgmPiano = loadSound('assets/piano moment.mp3');
   // mouseClick = loadSound('assets/Mouse-Click-02-c-FesliyanStudios.com.mp3');
 
-
 }
-
-function startClick() {
-  currentNode++;
+function startClick() { 
+  currentNode ++;
   addText();// update scene Text
 
   // buttonA
   buttonA = document.getElementById("start-button");
   buttonA.removeEventListener("click", startClick)
   buttonA.addEventListener("click", clickBtnA)
+
   
-  buttonA = document.createElement("button"); // create button
-  document.getElementById("decision-container").appendChild(buttonA); // add to html body
-  buttonA.className = "decision-button";
-  buttonA.id = "button-A";
-  buttonA.addEventListener("click", clickBtnA);
 
   //create choice A and B buttons
   buttonB = document.createElement("button"); // create button
@@ -122,3 +115,4 @@ function clickBtnC() {
   inputOption(currentNode);
   addText();
 }
+

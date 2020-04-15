@@ -28,19 +28,17 @@ body {
 }
 
 #sceneText-container{
-    background: coral;
-    
+    background:rgb(255, 255, 255, 0.3);
+    width: 50%;
     color: white;
-    top: 85%;
     position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    top: 45%;
+    transform: translate(50%, 100%);
 }
 
 #sceneText{
-    
-    /* padding-left:1%; */
+    padding-left:5%;
+    padding-right: 5%;
     /* align-content: center; */
 
 }
