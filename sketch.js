@@ -25,7 +25,7 @@ function preload() {
   backImg = loadImage('assets/start.jpg');
   // !!! files used for characters are test files only now 
   charImg1 = loadImage('assets/1.png');  
-  charImg2 = loadImage('assets/2.png');
+  charImg2 = loadImage('assets/doctor.png');
   charImg3 = loadImage('assets/3.png');
   backImg1 = loadImage('assets/backImg1.jpg');
   backImg2 = loadImage('assets/backImg2.png');
@@ -129,7 +129,7 @@ function clickBtnA() {
 function clickBtnB() {
   if (currentNode == 1) { 
     character = charImg2; // assign character image 
-    size = [450, 0];
+    size = [350, 0];
     backImg = backImg2;
   }
   currentNode = narrative[currentNode].buttonRoute[1];
