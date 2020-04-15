@@ -28,7 +28,7 @@
     "buttonText": [
       "They're just rumors.",
       "I don't know anyone ill but, I believe the rumors.",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       3,
@@ -42,7 +42,7 @@
     "buttonText": [
       "Immediately believe that the situation might be worse.",
       "Hold onto the blief that they're just rumors",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       5,
@@ -56,7 +56,7 @@
     "buttonText": [
       "Believe that the situation is not that serious.",
       "Stockpile survival goods",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       3,
@@ -84,7 +84,7 @@
     "buttonText": [
       "Try to buy face masks, but they are all sold out",
       "Alright,I cannot control life and death and I don't want to care.",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       7,
@@ -112,7 +112,7 @@
     "buttonText": [
       "donating some of face masks to doctors",
       "not donating face masks since I also need them",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       9,
@@ -126,7 +126,7 @@
     "buttonText": [
       "Click me to see the ending",
       "See the ending",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       16,
@@ -140,7 +140,7 @@
     "buttonText": [
       "Click me to see the ending",
       "See the ending",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       16,
@@ -154,7 +154,7 @@
     "buttonText": [
       "condemn others for hoarding face masks",
       "reflect myself and think what results in my current situation",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       13,
@@ -168,7 +168,7 @@
     "buttonText": [
       "Click me to see the ending",
       "See the ending",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       16,
@@ -182,7 +182,7 @@
     "buttonText": [
       "I decide to go out to relax",
       "I'll just stay at home",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       14,
@@ -194,7 +194,7 @@
   {
     "sceneText": "Since you don't have face masks, you are infected in the end",
     "buttonText": [
-      "Go back to the last page",
+      "GO BACK",
       "Start again",
       "Thanks for playing"
     ],
@@ -210,7 +210,7 @@
     "buttonText": [
       "Click me to see the ending",
       "See the ending",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       16,
@@ -238,7 +238,7 @@
     "buttonText": [
       "Report it to my superior",
       "don't report it",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       18,
@@ -266,7 +266,7 @@
     "buttonText": [
       "I'm a doctor. I have the responsibility to help Wuhan",
       "I'm so disappointed with what they've done to me, and I won't help them.",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       21,
@@ -308,7 +308,7 @@
     "buttonText": [
       "Ask for supplies from the society",
       "I break down and I don't want to stay in hospital any more",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       23,
@@ -322,7 +322,7 @@
     "buttonText": [
       "I'll carry supplies by my own from express center",
       "I'll ask the society to deliver supplies directly to my hospital",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       24,
@@ -336,7 +336,7 @@
     "buttonText": [
       "Express my gratitude for society",
       "Hope everything will be better in the future",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       27,
@@ -350,7 +350,7 @@
     "buttonText": [
       "The situation becomes better",
       "Express my gratitude for society",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       27,
@@ -411,7 +411,7 @@
     "buttonText": [
       "punish the doctors for spreading rumors",
       "not punish the doctors, and allow the information to spread secretly",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       32,
@@ -425,7 +425,7 @@
     "buttonText": [
       "Start again",
       "I'll release information step by step",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       1,
@@ -439,7 +439,7 @@
     "buttonText": [
       "Start again",
       "I'll release information step by step",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       2,
@@ -453,7 +453,7 @@
     "buttonText": [
       "I will still hide the real information to straighten out contradictions in my lie and make it plausible",
       "I have to release information now",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       33,
@@ -467,7 +467,7 @@
     "buttonText": [
       "still open train stations and airports",
       "hesitate about closing train stations and airports",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       37,
@@ -481,7 +481,7 @@
     "buttonText": [
       "hesitate about closing train stations and airports",
       "still decide to close train stations and airports. Lives are more valuable.",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       37,
@@ -509,7 +509,7 @@
     "buttonText": [
       "Close train stations and airports to prevent the virus from spreading",
       "I hesitate about closing train stations and airports",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       35,
@@ -537,7 +537,7 @@
     "buttonText": [
       "I'll revenge them by not giving them supplies",
       "I decide to apologize to society, and give the hospitals donations and supplies",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       39,
@@ -551,7 +551,7 @@
     "buttonText": [
       "See the ending",
       "Start again",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       40,
@@ -565,7 +565,7 @@
     "buttonText": [
       "Thanks for playing",
       "Start again",
-      "Go back to the last page"
+      "GO BACK"
     ],
     "buttonRoute": [
       100,
