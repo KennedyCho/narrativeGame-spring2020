@@ -56,6 +56,9 @@ function inputOption(currentNode) {
   if (narrative[currentNode].back == 1) {
     
     document.getElementById('button-C').style.background = 'rgb(255, 0, 0, 0.3)';
+  }else{
+
+    document.getElementById('button-C').style.background = 'rgb(255, 255, 255, 0.8)';
   }
 
   buttonA.innerHTML = narrative[currentNode].buttonText[0]; //update buttonA option
@@ -71,19 +74,8 @@ function updateSketch() {
   background(backImg);
   character.resize(size[0], size[1]);
   image(character, w/4.5, h*0.3); //character image
-
-
-  // @Linda add code here 
-  // GOAL: update background image, character image and audio according to the currentNode
-  
-
-  // let bgmLove, bgmNovember, bgmPiano, mouseClick;
-  // soundFormats('mp3');
-  // bgmLove = loadSound('assets/love.mp3');
-  // bgmNovember = loadSound('assets/november.mp3');
-  // bgmPiano = loadSound('assets/piano moment.mp3');
-  // mouseClick = loadSound('assets/Mouse-Click-02-c-FesliyanStudios.com.mp3');
-
+  addText();
+  inputOption(currentNode);
 }
 function startClick() { 
   currentNode ++;
@@ -123,8 +115,6 @@ function clickBtnA() {
   }
   currentNode = narrative[currentNode].buttonRoute[0];
   updateSketch();
-  addText();
-  inputOption(currentNode);
 
 }
 
@@ -136,8 +126,6 @@ function clickBtnB() {
   }
   currentNode = narrative[currentNode].buttonRoute[1];
   updateSketch();
-  inputOption(currentNode);
-  addText();
 }
 
 function clickBtnC() {
@@ -149,7 +137,6 @@ function clickBtnC() {
   }
   currentNode = narrative[currentNode].buttonRoute[2];
   updateSketch();
-  inputOption(currentNode);
-  addText();
+  
 }
 
